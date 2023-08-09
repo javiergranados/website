@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-option {
+    @apply mx-2 cursor-pointer p-4  hover:bg-secondary;
+  }
+  .nav-option-odd {
+    @apply rounded-bl-[200px] rounded-br-[100px] rounded-tl-[300px] rounded-tr-[300px];
+  }
+  .nav-option-even {
+    @apply rounded-bl-[100px] rounded-br-[200px] rounded-tl-[300px] rounded-tr-[300px];
+  }
+}
