@@ -1,31 +1,42 @@
 <script setup lang="ts">
-import { useTheme } from '@/composables/useTheme'
 import { Switch } from '@headlessui/vue'
-import { ref, watch } from 'vue'
+import { computed } from 'vue'
 
-const { toggleTheme } = useTheme()
+const props = defineProps<{
+  isDarkMode: boolean
+}>()
 
-const enabled = ref(false)
+const emit = defineEmits<{
+  (eventName: 'toggleTheme'): void
+}>()
 
-watch(enabled, toggleTheme)
+const isToggleEnabled = computed({
+  get() {
+    return props.isDarkMode
+  },
+  set() {
+    emit('toggleTheme')
+  },
+})
 </script>
+
 <template>
   <Switch
-    v-model="enabled"
+    v-model="isToggleEnabled"
     :class="
-      enabled
+      isToggleEnabled
         ? 'border-gray-500 bg-gray-800 hover:border-gray-400'
         : 'border-gray-400 bg-base-200 hover:border-gray-500'
     "
     class="relative inline-flex h-6 w-11 items-center rounded-full border"
   >
     <span
-      :class="enabled ? 'translate-x-6 bg-base-100' : 'translate-x-1 bg-gray-200'"
+      :class="isToggleEnabled ? 'translate-x-6 bg-base-100' : 'translate-x-1 bg-gray-200'"
       class="b-1 inline-block h-4 w-4 transform rounded-full transition"
     />
     <!-- sun -->
     <svg
-      v-if="!enabled"
+      v-if="!isToggleEnabled"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       focusable="false"
@@ -54,7 +65,7 @@ watch(enabled, toggleTheme)
     </svg>
     <!-- moon -->
     <svg
-      v-if="enabled"
+      v-if="isToggleEnabled"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       focusable="false"
