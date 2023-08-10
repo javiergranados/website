@@ -4,7 +4,7 @@
 
 @layer components {
   .nav-option {
-    @apply mx-2 cursor-pointer p-4  hover:bg-secondary;
+    @apply mx-2 cursor-pointer p-4  text-primary hover:bg-secondary;
   }
   .nav-option-odd {
     @apply rounded-bl-[200px] rounded-br-[100px] rounded-tl-[300px] rounded-tr-[300px];

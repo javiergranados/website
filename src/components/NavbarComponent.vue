@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ThemeToggle from './ThemeToggle.vue'
+
 const NAV_OPTIONS = ['projects', 'uses', 'about']
 
 function buildOptionClass(index: number) {
@@ -13,9 +15,8 @@ function buildOptionClass(index: number) {
 
 <template>
   <nav class="navbar h-24 border-b border-primary bg-base-100">
-    <ul class="items-center px-1 text-primary">
-      <li class="btn btn-ghost mr-2 text-xl normal-case">LOGO</li>
-      <li v-for="(option, index) in NAV_OPTIONS" :key="index" :class="buildOptionClass(index)">/{{ option }}</li>
-    </ul>
+    <a class="btn btn-ghost mr-2 text-xl normal-case">LOGO</a>
+    <a v-for="(option, index) in NAV_OPTIONS" :key="index" :class="buildOptionClass(index)">/{{ option }}</a>
+    <ThemeToggle class="ml-auto mr-2" />
   </nav>
 </template>
