@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const msg = 'Hello World!'
+const msg = 'Main View'
 </script>
 
 <template>
