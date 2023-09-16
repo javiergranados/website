@@ -8,23 +8,23 @@ type Projects = ReadonlyArray<{
 const projects: Projects = [
   {
     label: 'Brickbro',
-    href: 'https://www.brickbro.com/',
+    href: 'https://www.brickbro.com',
   },
   {
     label: 'Entrena X Salud',
-    href: 'https://www.entrenaxsalud.es/',
+    href: 'https://www.entrenaxsalud.es',
   },
   {
     label: 'BitsaCard',
-    href: 'https://bitsacard.com/',
+    href: 'https://bitsacard.com',
   },
   {
     label: 'App BitsaCard',
-    href: 'https://app.bitsacard.com/',
+    href: 'https://app.bitsacard.com',
   },
   {
     label: 'Wallacoin',
-    href: 'https://wallacoin.com/',
+    href: 'https://wallacoin.com',
     isDiscontinued: true,
   },
 ]
