@@ -2,13 +2,10 @@
 type Projects = ReadonlyArray<{
   label: string
   href: string
+  isDiscontinued?: boolean
 }>
 
-const links: Projects = [
-  {
-    label: 'Wallacoin',
-    href: 'https://wallacoin.com/',
-  },
+const projects: Projects = [
   {
     label: 'Brickbro',
     href: 'https://www.brickbro.com/',
@@ -25,6 +22,11 @@ const links: Projects = [
     label: 'App BitsaCard',
     href: 'https://app.bitsacard.com/',
   },
+  {
+    label: 'Wallacoin',
+    href: 'https://wallacoin.com/',
+    isDiscontinued: true,
+  },
 ]
 </script>
 
@@ -33,15 +35,17 @@ const links: Projects = [
     A brief list of public projects in which I&lsquo;ve created or participated
   </h1>
   <ul class="text-3xl text-primary">
-    <li v-for="link in links" :key="link.label" class="mb-2">
+    <li v-for="project in projects" :key="project.label" class="mb-2">
       <a
-        :href="link.href"
+        :href="project.href"
         target="_blank"
         rel="noreferrer"
-        class="text-2xl text-primary transition-colors hover:text-neutral"
+        :class="`text-2xl text-primary transition-colors hover:text-neutral ${
+          project.isDiscontinued ? 'pointer-events-none line-through' : ''
+        }`"
       >
         <span class="mr-3 hidden md:inline">▷</span>
-        <span class="no-underline">{{ link.label }}</span>
+        <span class="no-underline">{{ project.label }}{{ project.isDiscontinued ? ' (discontinued)' : '' }}</span>
       </a>
     </li>
 
