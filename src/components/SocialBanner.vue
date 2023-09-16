@@ -1,5 +1,5 @@
 <template>
-  <div className="flex items-center w-full pt-5 pb-10 justify-evenly md:pt-0">
+  <div class="flex w-full items-center justify-evenly pb-10 pt-5 md:pt-0">
     <a href="mailto:hola@javiergranados.dev" class="cursor-pointer fill-primary transition-colors hover:fill-neutral">
       <svg width="50" height="50" viewBox="0 0 20 18">
         <path

@@ -14,19 +14,22 @@ const coverLgSrc = computed(() => `cover-lg-${theme.value}.svg`)
 
 <template>
   <NavbarComponent />
-  <main role="main" class="animate__animated animate__fadeIn h-[calc(100vh-10rem)] overflow-auto bg-base-100 p-8">
-    <div className="w-full max-w-5xl px-4 pt-5 pb-10 mx-auto my-0 md:px-8">
-      <div className="block md:hidden">
-        <img :src="coverSrc" alt="cover" class="h-[200px] w-[275px]" />
+  <main
+    role="main"
+    class="animate__animated animate__fadeIn h-[calc(100vh-10rem)] overflow-auto bg-base-100 pt-5 md:p-8"
+  >
+    <div class="mx-auto my-0 w-full max-w-5xl px-4 pb-10 pt-5 md:px-8">
+      <div class="block md:hidden">
+        <img :src="coverSrc" alt="cover" class="mx-auto h-[200px] w-[275px]" />
       </div>
-      <div className="hidden md:block lg:hidden">
-        <img :src="coverMdSrc" alt="cover" class="h-[380px] w-[705px]" />
+      <div class="hidden md:block lg:hidden">
+        <img :src="coverMdSrc" alt="cover" class="mx-auto h-[380px] w-[705px]" />
       </div>
-      <div className="hidden lg:block lg:max-w-4xl">
-        <img :src="coverLgSrc" alt="cover" class="h-[360px] w-[895px]" />
+      <div class="hidden lg:block lg:max-w-4xl">
+        <img :src="coverLgSrc" alt="cover" class="mx-auto h-[360px] w-[895px]" />
       </div>
       <SocialBanner />
-      <div className="text-center md:text-left">
+      <div class="text-center md:text-left">
         <router-view></router-view>
       </div>
     </div>
