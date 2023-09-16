@@ -2,11 +2,11 @@ import { onMounted, onUnmounted, ref, watchEffect } from 'vue'
 
 type Theme = 'dark' | 'light'
 
-export function useTheme() {
-  const mediaQueryList = ref(window.matchMedia('(prefers-color-scheme: dark)'))
-  const defaultThemeValue = mediaQueryList.value.matches ? 'dark' : 'light'
+const mediaQueryList = ref(window.matchMedia('(prefers-color-scheme: dark)'))
+const defaultThemeValue = mediaQueryList.value.matches ? 'dark' : 'light'
+const theme = ref<Theme>(defaultThemeValue)
 
-  const theme = ref<Theme>(defaultThemeValue)
+export function useTheme() {
   document.documentElement.classList.remove(defaultThemeValue === 'dark' ? 'light' : 'dark')
   document.documentElement.classList.add(defaultThemeValue)
 
