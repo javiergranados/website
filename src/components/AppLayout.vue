@@ -3,6 +3,7 @@ import { useTheme } from '@/composables/useTheme'
 import { computed } from 'vue'
 import FooterComponent from './FooterComponent.vue'
 import NavbarComponent from './NavbarComponent.vue'
+import SocialBanner from './SocialBanner.vue'
 
 const { theme } = useTheme()
 
@@ -24,6 +25,7 @@ const coverLgSrc = computed(() => `cover-lg-${theme.value}.svg`)
       <div className="hidden lg:block lg:max-w-4xl">
         <img :src="coverLgSrc" alt="cover" class="h-[360px] w-[895px]" />
       </div>
+      <SocialBanner />
       <div className="text-center md:text-left">
         <router-view></router-view>
       </div>

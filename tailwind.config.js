@@ -9,7 +9,7 @@ export default {
     themes: [
       {
         light: {
-          primary: '#051221',
+          primary: '#26325e',
           secondary: '#80B2ED',
           accent: '#8F3985',
           neutral: '#80B2ED',
@@ -24,7 +24,7 @@ export default {
           secondary: '#ffff',
           accent: '#8F3985',
           neutral: '#ffff',
-          'base-100': '#051221',
+          'base-100': '#071220',
           info: '#80B2ED',
           success: '#94C9A9',
           warning: '#F87575',
