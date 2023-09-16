@@ -6,6 +6,9 @@
   .nav-option {
     @apply mx-2 cursor-pointer p-4  text-primary hover:bg-secondary dark:hover:bg-primary dark:hover:text-base-100;
   }
+  .nav-option-selected {
+    @apply cursor-default bg-secondary dark:bg-primary dark:text-base-100;
+  }
   .nav-option-odd {
     @apply rounded-bl-[200px] rounded-br-[100px] rounded-tl-[300px] rounded-tr-[300px];
   }
