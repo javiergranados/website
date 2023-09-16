@@ -4,7 +4,7 @@
 
 @layer components {
   .nav-option {
-    @apply mx-2 hidden cursor-pointer p-4 text-primary hover:bg-secondary dark:hover:bg-primary dark:hover:text-base-100 md:flex;
+    @apply mx-2 hidden cursor-pointer select-none p-4 text-primary hover:bg-secondary dark:hover:bg-primary dark:hover:text-base-100 md:flex;
   }
   .nav-option-selected {
     @apply cursor-default bg-secondary dark:bg-primary dark:text-base-100;
