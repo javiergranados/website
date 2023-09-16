@@ -6,7 +6,7 @@ const year = ref(date.getFullYear())
 </script>
 
 <template>
-  <footer class="footer h-16 items-center border-t border-primary bg-base-100 p-4">
+  <footer class="footer h-14 items-center border-t border-primary bg-base-100 p-2 md:h-16 md:p-4">
     <p class="mx-auto text-primary md:mx-0">© {{ year }} Javier Granados - Frontend Developer</p>
   </footer>
 </template>

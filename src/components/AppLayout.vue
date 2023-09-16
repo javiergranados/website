@@ -16,7 +16,7 @@ const coverLgSrc = computed(() => `cover-lg-${theme.value}.svg`)
   <NavbarComponent />
   <main
     role="main"
-    class="animate__animated animate__fadeIn h-[calc(100vh-10rem)] overflow-auto bg-base-100 pt-5 md:p-8"
+    class="animate__animated animate__fadeIn h-[calc(100vh-8.5rem)] overflow-auto bg-base-100 pt-5 md:h-[calc(100vh-10rem)] md:p-8"
   >
     <div class="mx-auto my-0 w-full max-w-5xl px-4 pb-10 pt-5 md:px-8">
       <div class="block md:hidden">

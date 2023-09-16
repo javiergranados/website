@@ -2,6 +2,7 @@
 import { useTheme } from '@/composables/useTheme'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import HamburgerMenu from './HamburgerMenu.vue'
 import ThemeToggle from './ThemeToggle.vue'
 
 const NAV_OPTIONS = ['projects', 'uses', 'about']
@@ -23,8 +24,11 @@ function buildOptionClass(index: number, option: string) {
 </script>
 
 <template>
-  <nav class="navbar h-24 border-b border-primary bg-base-100">
-    <router-link to="/" class="mr-8"><img alt="logo" :src="logoSrc" width="65" height="50" /> </router-link>
+  <nav class="navbar h-20 border-b border-primary bg-base-100 md:h-24">
+    <HamburgerMenu />
+    <router-link to="/" class="mr-8 hidden md:flex"
+      ><img alt="logo" :src="logoSrc" width="65" height="50" />
+    </router-link>
     <router-link
       v-for="(option, index) in NAV_OPTIONS"
       :key="index"
