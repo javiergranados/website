@@ -14,7 +14,7 @@ const apps: IterableElement = [
   {
     title: 'Terminal',
     text: 'Warp',
-    href: 'https://warp.dev',
+    href: 'https://app.warp.dev/referral/96XYLV',
   },
   {
     title: 'To-Do List',
@@ -61,8 +61,8 @@ const devices: IterableElement = [
   },
   {
     title: 'Tabletop',
-    text: 'Ikea LAGKAPTEN',
-    href: 'https://www.ikea.com/es/es/p/lagkapten-tablero-gris-oscuro-80508231',
+    text: 'Ikea Bekant',
+    href: 'https://www.ikea.com/es/es/p/bekant-tablero-linoleo-azul-10366305/#content',
   },
   {
     title: 'Chair',
