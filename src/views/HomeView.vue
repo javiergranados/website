@@ -11,7 +11,7 @@ gifSrc.value = 'https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master
     <img :src="gifSrc" alt="waving hand" class="inline h-16" />
   </h1>
   <p class="mt-4 text-3xl text-primary">
-    I&apos;m a software engineer based in Seville, Spain&nbsp;
+    I&apos;m a front-end developer based in Seville, Spain&nbsp;
     <span role="img" aria-label="flag"> 🇪🇸 </span>
   </p>
 </template>
