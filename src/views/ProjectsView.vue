@@ -12,7 +12,7 @@ const projects: Projects = [
   },
   {
     label: 'Entrena X Salud',
-    href: 'https://www.entrenaxsalud.es',
+    href: 'https://entrenaxsalud.vercel.app/',
   },
   {
     label: 'BitsaCard',
@@ -36,14 +36,8 @@ const projects: Projects = [
   </h1>
   <ul class="text-3xl text-primary">
     <li v-for="project in projects" :key="project.label" class="mb-2">
-      <a
-        :href="project.href"
-        target="_blank"
-        rel="noreferrer"
-        :class="`text-2xl text-primary transition-colors hover:text-neutral ${
-          project.isDiscontinued ? 'pointer-events-none line-through' : ''
-        }`"
-      >
+      <a :href="project.href" target="_blank" rel="noreferrer" :class="`text-2xl text-primary transition-colors hover:text-neutral ${project.isDiscontinued ? 'pointer-events-none line-through' : ''
+        }`">
         <span class="mr-3 hidden md:inline">▷</span>
         <span class="no-underline">{{ project.label }}{{ project.isDiscontinued ? ' (discontinued)' : '' }}</span>
       </a>
