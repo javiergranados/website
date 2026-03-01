@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "brickbro",
+    "label": "Brickbro",
+    "description": "Plataforma inmobiliaria proptech para la compraventa de inmuebles comerciales.",
+    "href": "https://www.brickbro.com",
+    "role": "Front-end Developer",
+    "stack": ["Vue.js", "Tailwind CSS", "TypeScript"],
+    "year": "2023",
+    "featured": true,
+    "isDiscontinued": false
+  },
+  {
+    "slug": "entrena-x-salud",
+    "label": "Entrena X Salud",
+    "description": "App de entrenamiento personal y seguimiento de hábitos saludables.",
+    "href": "https://entrenaxsalud.vercel.app/",
+    "role": "Front-end Developer",
+    "stack": ["Vue.js", "Tailwind CSS"],
+    "year": "2022",
+    "featured": false,
+    "isDiscontinued": false
+  },
+  {
+    "slug": "bitsacard",
+    "label": "BitsaCard",
+    "description": "Plataforma de tarjetas de fidelización digital para negocios locales.",
+    "href": "https://bitsacard.com",
+    "role": "Front-end Developer",
+    "stack": ["Vue.js", "Tailwind CSS", "TypeScript"],
+    "year": "2022",
+    "featured": false,
+    "isDiscontinued": false
+  },
+  {
+    "slug": "app-bitsacard",
+    "label": "App BitsaCard",
+    "description": "Aplicación web de usuario para la plataforma BitsaCard.",
+    "href": "https://app.bitsacard.com",
+    "role": "Front-end Developer",
+    "stack": ["Vue.js", "TypeScript"],
+    "year": "2022",
+    "featured": false,
+    "isDiscontinued": false
+  },
+  {
+    "slug": "wallacoin",
+    "label": "Wallacoin",
+    "description": "Plataforma de criptomonedas y activos digitales.",
+    "href": "https://wallacoin.com",
+    "role": "Front-end Developer",
+    "stack": ["Vue.js"],
+    "year": "2021",
+    "featured": false,
+    "isDiscontinued": true
+  }
+]

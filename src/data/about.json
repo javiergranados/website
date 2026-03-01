@@ -1,0 +1,28 @@
+{
+  "headline": "Front-end Developer & Tech Lead",
+  "location": "Sevilla, España",
+  "bio": "Soy tech lead en una empresa de telecomunicaciones donde lidero el desarrollo frontend y la experiencia de usuario. Me apasiona crear interfaces que sean tanto funcionales como visualmente cuidadas, con atención a cada detalle.",
+  "bio2": "Aunque mi foco principal es el frontend, también me involucro en diseño y gestión de proyectos — porque creo que el mejor código es el que resuelve el problema correcto de la manera correcta.",
+  "interests": [
+    { "emoji": "💍", "label": "Husband" },
+    { "emoji": "👨‍👧‍👦", "label": "Father of 3" },
+    { "emoji": "🧗", "label": "Casual rock climber" },
+    { "emoji": "🎵", "label": "OST lover" },
+    { "emoji": "🎮", "label": "Videogames fan" },
+    { "emoji": "📚", "label": "Fantasy books enthusiast" }
+  ],
+  "social": [
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/javiergranadosdev/"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/javiergranados"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:hola@javiergranados.dev"
+    }
+  ]
+}

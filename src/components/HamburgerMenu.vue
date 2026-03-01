@@ -67,15 +67,13 @@ const router = useRouter()
       </div>
     </MenuButton>
     <MenuItems
-      class="ring-primary-700 absolute left-0 z-10 mt-2 w-56 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-white ring-opacity-5 focus:outline-none"
+      class="ring-primary-700 absolute left-0 z-10 mt-2 w-56 origin-top-left rounded-md border border-primary/20 bg-base-100 shadow-lg ring-1 ring-primary/20 focus:outline-none"
     >
       <div class="px-1 py-1">
         <MenuItem v-for="menuOption in MENU_OPTIONS" v-slot="{ active }" :key="menuOption.label">
           <button
             :class="[
-              active
-                ? 'bg-primary text-secondary dark:bg-base-100 dark:text-primary'
-                : 'text-primary dark:text-base-100',
+              active ? 'bg-primary text-base-100 dark:bg-primary dark:text-base-100' : 'text-primary dark:text-primary',
               'flex w-full items-center rounded-md px-2 py-2 text-sm font-semibold',
             ]"
             @click="router.push(menuOption.route)"
