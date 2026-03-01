@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { useTheme } from '@/composables/useTheme'
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const { theme } = useTheme()
+const { t } = useI18n()
 
 const coverSrc = computed(() => `cover-${theme.value}.svg`)
 const coverMdSrc = computed(() => `cover-md-${theme.value}.svg`)
@@ -22,12 +24,12 @@ const coverLgSrc = computed(() => `cover-lg-${theme.value}.svg`)
       <!-- Text content -->
       <div class="flex flex-col items-center gap-6 text-center lg:items-start lg:text-left">
         <div>
-          <p class="mb-2 text-sm font-medium uppercase tracking-widest text-primary/60">Based in Seville, Spain 🇪🇸</p>
-          <h1 class="text-3xl font-bold text-primary md:text-4xl">Frontend Engineer & Tech Lead</h1>
+          <p class="mb-2 text-sm font-medium uppercase tracking-widest text-primary/60">{{ t('home.location') }}</p>
+          <h1 class="text-3xl font-bold text-primary md:text-4xl">{{ t('home.headline') }}</h1>
         </div>
 
         <p class="max-w-md text-base text-primary/70">
-          Building scalable solutions where thoughtful design, clean architecture, and attention to detail converge.
+          {{ t('home.tagline') }}
         </p>
 
         <!-- CTAs -->
@@ -35,12 +37,12 @@ const coverLgSrc = computed(() => `cover-lg-${theme.value}.svg`)
           <router-link
             to="/projects"
             class="rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-base-100 transition-all hover:opacity-90 hover:shadow-lg"
-            >View Projects</router-link
+            >{{ t('home.cta.projects') }}</router-link
           >
           <a
             href="mailto:hola@javiergranados.dev"
             class="rounded-lg border border-primary px-5 py-2.5 text-sm font-semibold text-primary transition-all hover:bg-primary/10"
-            >Contact me</a
+            >{{ t('home.cta.contact') }}</a
           >
         </div>
       </div>

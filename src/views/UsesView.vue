@@ -1,21 +1,24 @@
 <script setup lang="ts">
+import { useLocalizedData } from '@/composables/useLocalizedData'
 import usesData from '@/data/uses.json'
+import { useI18n } from 'vue-i18n'
 
-const { intro, sections } = usesData
+const { t } = useI18n()
+const { localizeField } = useLocalizedData()
 </script>
 
 <template>
   <div class="mx-auto w-full max-w-7xl px-4 py-12 md:px-8">
     <div class="mb-10">
-      <h1 class="text-3xl font-bold text-primary md:text-4xl">Uses</h1>
-      <p class="mt-3 text-primary/70">{{ intro }}</p>
+      <h1 class="text-3xl font-bold text-primary md:text-4xl">{{ t('uses.title') }}</h1>
+      <p class="mt-3 text-primary/70">{{ localizeField(usesData.intro) }}</p>
     </div>
 
     <div class="flex flex-col gap-12">
-      <section v-for="section in sections" :key="section.title">
+      <section v-for="section in usesData.sections" :key="section.title.en">
         <h2 class="mb-5 flex items-center gap-2 text-xl font-semibold text-primary">
           <span>{{ section.icon }}</span>
-          <span>{{ section.title }}</span>
+          <span>{{ localizeField(section.title) }}</span>
         </h2>
         <div class="flex flex-col gap-2">
           <a

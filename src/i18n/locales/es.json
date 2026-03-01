@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "uses": "Herramientas",
+    "about": "Sobre mí"
+  },
+  "home": {
+    "location": "Basado en Sevilla, España 🇪🇸",
+    "headline": "Frontend Engineer & Tech Lead",
+    "tagline": "Construyendo soluciones escalables donde el diseño cuidado, la arquitectura limpia y la atención al detalle convergen.",
+    "cta": {
+      "projects": "Ver Proyectos",
+      "contact": "Contáctame"
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "intro": "Una selección de proyectos públicos en los que he participado.",
+    "discontinued": "Discontinuado"
+  },
+  "uses": {
+    "title": "Herramientas"
+  },
+  "about": {
+    "title": "Sobre mí"
+  },
+  "locale": {
+    "en": "Inglés",
+    "es": "Español"
+  }
+}

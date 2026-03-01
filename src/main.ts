@@ -1,6 +1,7 @@
-import { createApp } from 'vue'
+import { createApp, isRef } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
+import i18n from './i18n'
 import './style.css'
 import About from './views/AboutView.vue'
 import Home from './views/HomeView.vue'
@@ -53,4 +54,10 @@ router.afterEach((to, _from, failure) => {
   }
 })
 
-createApp(App).use(router).mount('#app')
+// Establecer el atributo lang del HTML según el locale inicial.
+// Con legacy: false, i18n.global.locale es un WritableComputedRef<string>.
+const locale = i18n.global.locale
+const initialLang: string = isRef(locale) ? (locale.value as string) : String(locale)
+document.documentElement.setAttribute('lang', initialLang)
+
+createApp(App).use(router).use(i18n).mount('#app')

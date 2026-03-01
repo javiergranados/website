@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "uses": "Uses",
+    "about": "About"
+  },
+  "home": {
+    "location": "Based in Seville, Spain 🇪🇸",
+    "headline": "Frontend Engineer & Tech Lead",
+    "tagline": "Building scalable solutions where thoughtful design, clean architecture, and attention to detail converge.",
+    "cta": {
+      "projects": "View Projects",
+      "contact": "Contact me"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "intro": "A selection of public projects I've been part of.",
+    "discontinued": "Discontinued"
+  },
+  "uses": {
+    "title": "Uses"
+  },
+  "about": {
+    "title": "About"
+  },
+  "locale": {
+    "en": "English",
+    "es": "Spanish"
+  }
+}

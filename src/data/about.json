@@ -1,8 +1,20 @@
 {
-  "headline": "Frontend Engineer & Tech Lead",
-  "location": "Seville, Spain",
-  "bio": "I'm a tech lead at a telecommunications company where I lead frontend development, focused on creating experiences that are functional, visually polished, and scalable. I'm passionate about the process of transforming problems into well-structured solutions — from code architecture to visual details.",
-  "bio2": "While frontend is my core expertise, I actively engage in design and project management. I believe the best products emerge when there's coherence between technical vision, user experience, and team structure. I value documentation and clarity because they enable scalability and allow work to have lasting impact.",
+  "headline": {
+    "en": "Frontend Engineer & Tech Lead",
+    "es": "Frontend Engineer & Tech Lead"
+  },
+  "location": {
+    "en": "Seville, Spain",
+    "es": "Sevilla, España"
+  },
+  "bio": {
+    "en": "I'm a tech lead at a telecommunications company where I lead frontend development, focused on creating experiences that are functional, visually polished, and scalable. I'm passionate about the process of transforming problems into well-structured solutions — from code architecture to visual details.",
+    "es": "Soy tech lead en una empresa de telecomunicaciones donde lidero el desarrollo frontend, enfocado en crear experiencias funcionales, visualmente cuidadas y escalables. Me apasiona el proceso de transformar problemas en soluciones bien estructuradas, desde la arquitectura del código hasta los detalles visuales."
+  },
+  "bio2": {
+    "en": "While frontend is my core expertise, I actively engage in design and project management. I believe the best products emerge when there's coherence between technical vision, user experience, and team structure. I value documentation and clarity because they enable scalability and allow work to have lasting impact.",
+    "es": "Aunque el frontend es mi especialidad principal, participo activamente en diseño y gestión de proyectos. Creo que los mejores productos surgen cuando hay coherencia entre la visión técnica, la experiencia de usuario y la estructura del equipo. Valoro la documentación y la claridad porque permiten la escalabilidad y que el trabajo tenga un impacto duradero."
+  },
   "interests": [
     {
       "emoji": "💍",

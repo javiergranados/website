@@ -1,8 +1,14 @@
 {
-  "intro": "Software and hardware I use daily for work and personal projects.",
+  "intro": {
+    "en": "Software and hardware I use daily for work and personal projects.",
+    "es": "Software y hardware que uso a diario para el trabajo y mis proyectos personales."
+  },
   "sections": [
     {
-      "title": "Desktop Apps",
+      "title": {
+        "en": "Desktop Apps",
+        "es": "Apps de Escritorio"
+      },
       "icon": "💻",
       "items": [
         {
@@ -32,7 +38,10 @@
       ]
     },
     {
-      "title": "Desk Setup",
+      "title": {
+        "en": "Desk Setup",
+        "es": "Setup de Escritorio"
+      },
       "icon": "🖥️",
       "items": [
         {
