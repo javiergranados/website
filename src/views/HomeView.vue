@@ -23,11 +23,11 @@ const coverLgSrc = computed(() => `cover-lg-${theme.value}.svg`)
       <div class="flex flex-col items-center gap-6 text-center lg:items-start lg:text-left">
         <div>
           <p class="mb-2 text-sm font-medium uppercase tracking-widest text-primary/60">Based in Seville, Spain 🇪🇸</p>
-          <h1 class="text-3xl font-bold text-primary md:text-4xl">Frontend Developer & Tech Lead</h1>
+          <h1 class="text-3xl font-bold text-primary md:text-4xl">Frontend Engineer & Tech Lead</h1>
         </div>
 
         <p class="max-w-md text-base text-primary/70">
-          Crafting polished interfaces with attention to every detail. Focused on frontend, passionate about design.
+          Building scalable solutions where thoughtful design, clean architecture, and attention to detail converge.
         </p>
 
         <!-- CTAs -->
