@@ -7,7 +7,7 @@ const year = ref(date.getFullYear())
 
 <template>
   <footer class="border-t border-primary/20 bg-base-100">
-    <div class="mx-auto flex max-w-5xl flex-col items-center gap-3 px-4 py-6 md:flex-row md:justify-between md:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col items-center gap-3 px-4 py-6 md:flex-row md:justify-between md:px-8">
       <p class="text-sm text-primary/50">© {{ year }} javiergranados.dev</p>
       <div class="flex items-center gap-5">
         <!-- Email -->

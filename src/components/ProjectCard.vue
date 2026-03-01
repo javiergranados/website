@@ -17,26 +17,21 @@ defineProps<{
     :target="isDiscontinued ? undefined : '_blank'"
     rel="noreferrer"
     :class="[
-      'group relative flex flex-col gap-3 rounded-xl border p-5 transition-all duration-200',
+      'group flex flex-col gap-3 rounded-xl border p-5 transition-all duration-200',
       isDiscontinued
         ? 'cursor-not-allowed border-primary/20 hover:border-primary/20'
         : 'cursor-pointer border-primary/20 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md hover:shadow-primary/10',
     ]"
   >
-    <!-- Featured badge -->
-    <div v-if="featured && !isDiscontinued" class="absolute right-4 top-4">
-      <span class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">Featured</span>
-    </div>
-    <!-- Discontinued badge -->
-    <div v-if="isDiscontinued" class="absolute right-4 top-4">
-      <span class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary/60">Discontinued</span>
-    </div>
-
-    <div class="flex items-start justify-between gap-2 pr-20">
+    <div class="flex items-start justify-between gap-3">
       <h2 :class="['text-base font-semibold text-primary', isDiscontinued && 'line-through decoration-primary/40']">
         {{ label }}
       </h2>
-      <span class="shrink-0 text-xs text-primary/50">{{ year }}</span>
+      <div class="flex shrink-0 items-center gap-2">
+        <span class="text-xs text-primary/50">{{ year }}</span>
+        <span v-if="featured && !isDiscontinued" class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">Featured</span>
+        <span v-if="isDiscontinued" class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary/60">Discontinued</span>
+      </div>
     </div>
 
     <p class="text-sm leading-relaxed text-primary/70">{{ description }}</p>
