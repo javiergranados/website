@@ -10,12 +10,12 @@ import ThemeToggle from './ThemeToggle.vue'
 
 const NAV_OPTIONS = ['projects', 'uses', 'about'] as const
 
-const { colorMode, toggleColorMode } = useTheme()
+const { colorMode, daisyuiTheme, toggleColorMode } = useTheme()
 const { t } = useI18n()
 const route = useRoute()
 
-// Opción A (6.1): reutilizar logos existentes — el logo dark funciona bien con el fondo oscuro neon
-const logoSrc = computed(() => `logo-${colorMode.value}.svg`)
+// Opción B (6.1): variantes de logo para cada tema — logo-light, logo-dark, logo-neon-light, logo-neon-dark
+const logoSrc = computed(() => `logo-${daisyuiTheme.value}.svg`)
 
 function isActive(option: string) {
   return route.name === option
