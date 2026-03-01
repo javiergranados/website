@@ -1,5 +1,5 @@
 {
-  "intro": "Software y hardware que uso a diario para trabajar y para mis proyectos personales.",
+  "intro": "Software and hardware I use daily for work and personal projects.",
   "sections": [
     {
       "title": "Desktop Apps",
@@ -27,7 +27,7 @@
           "title": "Settings",
           "text": "Dot Files repo",
           "href": "https://github.com/javiergranados/dotfiles",
-          "note": "Toda mi configuración versionada en GitHub (WIP)."
+          "note": "All my configuration versioned on GitHub (WIP)."
         }
       ]
     },
