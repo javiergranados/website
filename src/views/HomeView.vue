@@ -14,8 +14,8 @@ const coverLgSrc = computed(() => `cover-lg-${theme.value}.svg`)
     <div class="flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:gap-12">
       <!-- Cover SVG -->
       <div class="shrink-0">
-        <img :src="coverSrc" alt="Javier Granados" class="h-[200px] w-[276px] lg:hidden" />
-        <img :src="coverMdSrc" alt="Javier Granados" class="hidden h-[280px] w-[520px] lg:block xl:hidden" />
+        <img :src="coverSrc" alt="Javier Granados" class="h-[200px] w-[276px] md:hidden" />
+        <img :src="coverMdSrc" alt="Javier Granados" class="hidden h-[280px] w-[520px] md:block xl:hidden" />
         <img :src="coverLgSrc" alt="Javier Granados" class="hidden h-[300px] w-[745px] xl:block" />
       </div>
 
