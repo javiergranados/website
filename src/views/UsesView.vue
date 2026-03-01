@@ -23,7 +23,7 @@ const { localizeField } = useLocalizedData()
         <div class="flex flex-col gap-2">
           <a
             v-for="item in section.items"
-            :key="item.title"
+            :key="item.slug"
             :href="item.href"
             target="_blank"
             rel="noreferrer"
@@ -31,16 +31,16 @@ const { localizeField } = useLocalizedData()
           >
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
-                <span class="text-sm font-semibold text-primary">{{ item.title }}</span>
+                <span class="text-sm font-semibold text-primary">{{ localizeField(item.title) }}</span>
                 <span class="text-primary/30">·</span>
-                <span class="text-sm text-primary/70">{{ item.text }}</span>
+                <span class="text-sm text-primary/70">{{ localizeField(item.text) }}</span>
               </div>
               <span
                 class="text-xs text-primary/30 transition-all group-hover:translate-x-0.5 group-hover:text-primary/60"
                 >→</span
               >
             </div>
-            <p v-if="item.note" class="text-xs text-primary/50">{{ item.note }}</p>
+            <p v-if="item.note" class="text-xs text-primary/50">{{ localizeField(item.note) }}</p>
           </a>
         </div>
       </section>
