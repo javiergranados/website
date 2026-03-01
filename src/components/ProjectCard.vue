@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useLocalizedData, type LocalizedString } from '@/composables/useLocalizedData'
+import { type LocalizedString, useLocalizedData } from '@/composables/useLocalizedData'
 import { useI18n } from 'vue-i18n'
 
 defineProps<{
@@ -9,7 +9,7 @@ defineProps<{
   role: LocalizedString | string
   stack: string[]
   year: string
-  scope: string
+  scope: LocalizedString | string
   isDiscontinued?: boolean
 }>()
 
@@ -35,8 +35,12 @@ const { localizeField } = useLocalizedData()
       </h2>
       <div class="flex shrink-0 items-center gap-2">
         <span class="text-xs text-primary/50">{{ year }}</span>
-        <span class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">{{ scope }}</span>
-        <span v-if="isDiscontinued" class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary/60"
+        <span class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">{{
+          localizeField(scope)
+        }}</span>
+        <span
+          v-if="isDiscontinued"
+          class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary/60"
           >{{ t('projects.discontinued') }}</span
         >
       </div>
