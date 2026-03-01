@@ -33,11 +33,11 @@ const { interests } = aboutData
         <div class="flex flex-wrap gap-2">
           <span
             v-for="interest in interests"
-            :key="interest.label"
+            :key="interest.slug"
             class="flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/5 px-3 py-1.5 text-sm text-primary/80"
           >
             <span>{{ interest.emoji }}</span>
-            <span>{{ interest.label }}</span>
+            <span>{{ localizeField(interest.label) }}</span>
           </span>
         </div>
       </div>
