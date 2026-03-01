@@ -2,78 +2,120 @@
   {
     "slug": "fabrikware",
     "label": "Fabrikware",
-    "description": "The operating system for global manufacturing for factories and brands.",
+    "description": {
+      "en": "The operating system for global manufacturing for factories and brands.",
+      "es": "El sistema operativo para la manufactura global de fábricas y marcas."
+    },
     "href": "https://fabrikware.com/",
     "role": "Frontend Engineer",
     "stack": ["React", "Tailwind", "TypeScript"],
     "year": "2025",
-    "scope": "Team",
+    "scope": {
+      "en": "Team",
+      "es": "En equipo"
+    },
     "isDiscontinued": true
   },
   {
     "slug": "parkiduo",
     "label": "Parkiduo",
-    "description": "Flexible parking reference platform for drivers and operators.",
+    "description": {
+      "en": "Flexible parking reference platform for drivers and operators.",
+      "es": "Plataforma de referencia de aparcamiento flexible para conductores y operadores."
+    },
     "href": "https://app.parkiduo.com/",
     "role": "Frontend Engineer",
     "stack": ["Preact", "daisyUI", "Tailwind"],
     "year": "2024",
-    "scope": "Team",
+    "scope": {
+      "en": "Team",
+      "es": "En equipo"
+    },
     "isDiscontinued": false
   },
   {
     "slug": "entrena-x-salud",
     "label": "Entrena X Salud",
-    "description": "Personal training app and healthy habit tracker.",
+    "description": {
+      "en": "Personal training app and healthy habit tracker.",
+      "es": "App de entrenamiento personal y seguimiento de hábitos saludables."
+    },
     "href": "https://entrenaxsalud.vercel.app/",
     "role": "Frontend Engineer",
     "stack": ["Next.js", "Bootstrap", "JavaScript"],
     "year": "2022",
-    "scope": "Solo",
+    "scope": {
+      "en": "Solo",
+      "es": "En solitario"
+    },
     "isDiscontinued": false
   },
   {
     "slug": "wallacoin",
     "label": "Wallacoin",
-    "description": "Cryptocurrency and digital assets platform.",
+    "description": {
+      "en": "Cryptocurrency and digital assets platform.",
+      "es": "Plataforma de criptomonedas y activos digitales."
+    },
     "href": "https://wallacoin.com",
     "role": "Frontend Engineer",
     "stack": ["React", "Emotion", "TypeScript"],
     "year": "2022",
-    "scope": "Team",
+    "scope": {
+      "en": "Team",
+      "es": "En equipo"
+    },
     "isDiscontinued": true
   },
   {
     "slug": "brickbro",
     "label": "Brickbro",
-    "description": "Proptech real estate platform for buying and selling commercial properties.",
+    "description": {
+      "en": "Proptech real estate platform for buying and selling commercial properties.",
+      "es": "Plataforma proptech inmobiliaria para la compraventa de inmuebles comerciales."
+    },
     "href": "https://www.brickbro.com",
     "role": "Frontend Developer",
     "stack": ["Next.js", "MUI", "TypeScript"],
     "year": "2021",
-    "scope": "Team",
+    "scope": {
+      "en": "Team",
+      "es": "En equipo"
+    },
     "isDiscontinued": false
   },
   {
     "slug": "app-bitsacard",
     "label": "BitsaCard App",
-    "description": "User-facing web application for the BitsaCard platform.",
+    "description": {
+      "en": "User-facing web application for the BitsaCard platform.",
+      "es": "Aplicación web orientada al usuario para la plataforma BitsaCard."
+    },
     "href": "https://app.bitsacard.com",
     "role": "Frontend Engineer",
     "stack": ["Next.js", "Bootstrap", "JavaScript"],
     "year": "2020",
-    "scope": "Solo",
+    "scope": {
+      "en": "Solo",
+      "es": "En solitario"
+    },
     "isDiscontinued": true
   },
   {
     "slug": "bitsacard",
     "label": "BitsaCard",
-    "description": "Digital loyalty card platform for local businesses.",
+    "description": {
+      "en": "Digital loyalty card platform for local businesses.",
+      "es": "Plataforma de tarjetas de fidelización digital para negocios locales."
+    },
     "href": "https://bitsacard.com",
     "role": "Frontend Developer",
     "stack": ["Next.js", "Bootstrap", "JavaScript"],
     "year": "2019",
-    "scope": "Solo",
+    "scope": {
+      "en": "Solo",
+      "es": "En solitario"
+    },
     "isDiscontinued": false
   }
 ]

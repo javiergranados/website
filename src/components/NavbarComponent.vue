@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import { useTheme } from '@/composables/useTheme'
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import HamburgerMenu from './HamburgerMenu.vue'
+import LocaleSwitcher from './LocaleSwitcher.vue'
 import ThemeToggle from './ThemeToggle.vue'
 
-const NAV_OPTIONS = ['projects', 'uses', 'about']
+const NAV_OPTIONS = ['projects', 'uses', 'about'] as const
 
 const { theme, toggleTheme } = useTheme()
+const { t } = useI18n()
 const route = useRoute()
 
 const logoSrc = computed(() => `logo-${theme.value}.svg`)
@@ -35,10 +38,11 @@ function isActive(option: string) {
               ? 'bg-primary text-base-100 dark:bg-primary dark:text-base-100'
               : 'text-primary hover:bg-primary/10 dark:hover:bg-primary/20',
           ]"
-          >/{{ option }}</router-link
+          >{{ t(`nav.${option}`) }}</router-link
         >
       </div>
-      <div class="ml-auto">
+      <div class="ml-auto flex items-center gap-2">
+        <LocaleSwitcher />
         <ThemeToggle :is-dark-mode="theme === 'dark'" @toggle-theme="toggleTheme" />
       </div>
     </div>

@@ -1,81 +1,155 @@
 {
-  "intro": "Software and hardware I use daily for work and personal projects.",
+  "intro": {
+    "en": "Software and hardware I use daily for work and personal projects.",
+    "es": "Software y hardware que uso a diario para el trabajo y mis proyectos personales."
+  },
   "sections": [
     {
-      "title": "Desktop Apps",
+      "title": {
+        "en": "Desktop Apps",
+        "es": "Aplicaciones de Escritorio"
+      },
       "icon": "💻",
       "items": [
         {
-          "title": "Editor",
+          "slug": "ide",
+          "title": {
+            "en": "IDE",
+            "es": "Editor"
+          },
           "text": "Windsurf",
           "href": "https://windsurf.com/",
-          "note": "Where developers are doing their best work."
+          "note": {
+            "en": "Where developers are doing their best work.",
+            "es": "Donde los desarrolladores hacen su mejor trabajo."
+          }
         },
         {
-          "title": "Terminal",
+          "slug": "terminal",
+          "title": {
+            "en": "Terminal",
+            "es": "Consola"
+          },
           "text": "Ghostty",
           "href": "https://ghostty.org/",
-          "note": "Fast, feature-rich, and cross-platform terminal emulator."
+          "note": {
+            "en": "Fast, feature-rich, and cross-platform terminal emulator.",
+            "es": "Emulador de terminal rápido, rico en características y multiplataforma."
+          }
         },
         {
-          "title": "To-Do List",
+          "slug": "todo-list",
+          "title": {
+            "en": "To-Do List",
+            "es": "Lista de Tareas"
+          },
           "text": "Things",
           "href": "https://culturedcode.com/things/",
-          "note": "Task manager that helps you plan your day, manage your projects, and make real progress toward your goals."
+          "note": {
+            "en": "Task manager that helps you plan your day, manage your projects, and make real progress toward your goals.",
+            "es": "Gestor de tareas que te ayuda a planificar tu día, gestionar tus proyectos y hacer progreso real hacia tus metas."
+          }
         },
         {
-          "title": "Settings",
-          "text": "Dot Files repo",
+          "slug": "settings",
+          "title": {
+            "en": "Settings",
+            "es": "Ajustes"
+          },
+          "text": {
+            "en": "Dot Files repo",
+            "es": "Repositorio de archivos de configuración"
+          },
           "href": "https://github.com/javiergranados/dotfiles",
-          "note": "All my configuration versioned on GitHub (WIP)."
+          "note": {
+            "en": "All my configuration versioned on GitHub (WIP).",
+            "es": "Todas mis configuraciones repositadas en GitHub (en construcción)."
+          }
         }
       ]
     },
     {
-      "title": "Desk Setup",
+      "title": {
+        "en": "Desk Setup",
+        "es": "Setup de Escritorio"
+      },
       "icon": "🖥️",
       "items": [
         {
-          "title": "Computer",
+          "slug": "computer",
+          "title": {
+            "en": "Computer",
+            "es": "Ordenador"
+          },
           "text": "Mac mini",
           "href": "https://support.apple.com/es-es/111894",
           "note": "M1, 16GB RAM."
         },
         {
-          "title": "Monitor",
+          "slug": "monitor",
+          "title": {
+            "en": "Monitor",
+            "es": "Pantalla"
+          },
           "text": "MPG321CURX QD-Oled",
           "href": "https://es.msi.com/Monitor/MPG-321CURX-QD-OLED",
           "note": null
         },
         {
-          "title": "Keyboard",
+          "slug": "keyboard",
+          "title": {
+            "en": "Keyboard",
+            "es": "Teclado"
+          },
           "text": "Feker Alice 80",
           "href": "https://amzn.eu/d/j6YUaUg",
-          "note": "Ergonomic layout, yellow switches."
+          "note": {
+            "en": "Ergonomic layout, yellow switches.",
+            "es": "Diseño ergonómico, interruptores amarillos."
+          }
         },
         {
-          "title": "Mouse",
+          "slug": "mouse",
+          "title": {
+            "en": "Mouse",
+            "es": "Ratón"
+          },
           "text": "Magic Trackpad",
           "href": "https://www.apple.com/es/shop/product/mxka3z/a/magic-trackpad-usb%E2%80%91c-superficie-multi%E2%80%91touch-negra",
           "note": null
         },
         {
-          "title": "Standing Desk",
+          "slug": "standing-desk",
+          "title": {
+            "en": "Standing Desk",
+            "es": "Escritorio"
+          },
           "text": "FlexiSpot E7",
           "href": "https://www.flexispot.es/escritorio-regulable-electricamente-e7.html",
           "note": null
         },
         {
-          "title": "Table top",
+          "slug": "table-top",
+          "title": {
+            "en": "Table top",
+            "es": "Tabla del escritorio"
+          },
           "text": "ANFALLARE",
           "href": "https://www.ikea.com/es/en/p/anfallare-table-top-bamboo-00465141/",
           "note": "Bamboo, 140x65 cm."
         },
         {
-          "title": "Chair",
+          "slug": "chair",
+          "title": {
+            "en": "Chair",
+            "es": "Silla"
+          },
           "text": "VALK Freya",
           "href": "https://valkgaming.com/en/36-valk-freya-gaming-chair.html",
-          "note": "Atomic Grey."
+          "note": {
+            "en": "Atomic grey color.",
+            "es": "Color gris átomico."
+          }
         }
       ]
     }

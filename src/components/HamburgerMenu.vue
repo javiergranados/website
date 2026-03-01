@@ -1,25 +1,16 @@
 <script setup lang="ts">
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
+import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 
 const MENU_OPTIONS = [
-  {
-    label: 'Home',
-    route: '/',
-  },
-  {
-    label: 'Projects',
-    route: '/projects',
-  },
-  {
-    label: 'Uses',
-    route: '/uses',
-  },
-  {
-    label: 'About',
-    route: '/about',
-  },
-]
+  { key: 'home', route: '/' },
+  { key: 'projects', route: '/projects' },
+  { key: 'uses', route: '/uses' },
+  { key: 'about', route: '/about' },
+] as const
+
+const { t } = useI18n()
 const router = useRouter()
 </script>
 
@@ -51,12 +42,12 @@ const router = useRouter()
               'mb-1 h-[2px] w-5 origin-left transform bg-primary transition-all duration-300',
             ]"
           ></div>
-          <div1
+          <div
             :class="[
               open ? 'translate-y-4' : '',
               'mb-1 h-[2px] w-5 transform rounded bg-primary transition-all delay-75 duration-300',
             ]"
-          ></div1>
+          ></div>
           <div
             :class="[
               open ? 'translate-y-4' : '',
@@ -70,7 +61,7 @@ const router = useRouter()
       class="ring-primary-700 absolute left-0 z-10 mt-2 w-56 origin-top-left rounded-md border border-primary/20 bg-base-100 shadow-lg ring-1 ring-primary/20 focus:outline-none"
     >
       <div class="px-1 py-1">
-        <MenuItem v-for="menuOption in MENU_OPTIONS" v-slot="{ active }" :key="menuOption.label">
+        <MenuItem v-for="menuOption in MENU_OPTIONS" v-slot="{ active }" :key="menuOption.key">
           <button
             :class="[
               active ? 'bg-primary text-base-100 dark:bg-primary dark:text-base-100' : 'text-primary dark:text-primary',
@@ -78,7 +69,7 @@ const router = useRouter()
             ]"
             @click="router.push(menuOption.route)"
           >
-            {{ menuOption.label }}
+            {{ t(`nav.${menuOption.key}`) }}
           </button>
         </MenuItem>
       </div>
