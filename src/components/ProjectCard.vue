@@ -6,7 +6,7 @@ defineProps<{
   role: string
   stack: string[]
   year: string
-  featured?: boolean
+  scope: string
   isDiscontinued?: boolean
 }>()
 </script>
@@ -29,8 +29,10 @@ defineProps<{
       </h2>
       <div class="flex shrink-0 items-center gap-2">
         <span class="text-xs text-primary/50">{{ year }}</span>
-        <span v-if="featured && !isDiscontinued" class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">Featured</span>
-        <span v-if="isDiscontinued" class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary/60">Discontinued</span>
+        <span class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">{{ scope }}</span>
+        <span v-if="isDiscontinued" class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary/60"
+          >Discontinued</span
+        >
       </div>
     </div>
 

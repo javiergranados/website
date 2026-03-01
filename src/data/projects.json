@@ -1,13 +1,32 @@
 [
   {
-    "slug": "brickbro",
-    "label": "Brickbro",
-    "description": "Plataforma inmobiliaria proptech para la compraventa de inmuebles comerciales.",
-    "href": "https://www.brickbro.com",
-    "role": "Front-end Developer",
-    "stack": ["Vue.js", "Tailwind CSS", "TypeScript"],
-    "year": "2023",
-    "featured": true,
+    "slug": "fabrikware",
+    "label": "Fabrikware",
+    "description": "The operating system for global manufacturing for factories and brands.",
+    "href": "https://fabrikware.com/",
+    "role": "Frontend Engineer",
+    "stack": [
+      "React",
+      "Tailwind",
+      "TypeScript"
+    ],
+    "year": "2025",
+    "scope": "Team",
+    "isDiscontinued": true
+  },
+  {
+    "slug": "parkiduo",
+    "label": "Parkiduo",
+    "description": "Plataforma de referencia de aparcamiento flexible.",
+    "href": "https://app.parkiduo.com/",
+    "role": "Frontend Engineer",
+    "stack": [
+      "Preact",
+      "daisyUI",
+      "Tailwind"
+    ],
+    "year": "2024",
+    "scope": "Team",
     "isDiscontinued": false
   },
   {
@@ -15,32 +34,14 @@
     "label": "Entrena X Salud",
     "description": "App de entrenamiento personal y seguimiento de hábitos saludables.",
     "href": "https://entrenaxsalud.vercel.app/",
-    "role": "Front-end Developer",
-    "stack": ["Vue.js", "Tailwind CSS"],
+    "role": "Frontend Engineer",
+    "stack": [
+      "Next.js",
+      "Bootstrap",
+      "JavaScript"
+    ],
     "year": "2022",
-    "featured": false,
-    "isDiscontinued": false
-  },
-  {
-    "slug": "bitsacard",
-    "label": "BitsaCard",
-    "description": "Plataforma de tarjetas de fidelización digital para negocios locales.",
-    "href": "https://bitsacard.com",
-    "role": "Front-end Developer",
-    "stack": ["Vue.js", "Tailwind CSS", "TypeScript"],
-    "year": "2022",
-    "featured": false,
-    "isDiscontinued": false
-  },
-  {
-    "slug": "app-bitsacard",
-    "label": "App BitsaCard",
-    "description": "Aplicación web de usuario para la plataforma BitsaCard.",
-    "href": "https://app.bitsacard.com",
-    "role": "Front-end Developer",
-    "stack": ["Vue.js", "TypeScript"],
-    "year": "2022",
-    "featured": false,
+    "scope": "Solo",
     "isDiscontinued": false
   },
   {
@@ -48,10 +49,59 @@
     "label": "Wallacoin",
     "description": "Plataforma de criptomonedas y activos digitales.",
     "href": "https://wallacoin.com",
-    "role": "Front-end Developer",
-    "stack": ["Vue.js"],
-    "year": "2021",
-    "featured": false,
+    "role": "Frontend Engineer",
+    "stack": [
+      "React",
+      "Emotion",
+      "TypeScript"
+    ],
+    "year": "2022",
+    "scope": "Team",
     "isDiscontinued": true
+  },
+  {
+    "slug": "brickbro",
+    "label": "Brickbro",
+    "description": "Plataforma inmobiliaria proptech para la compraventa de inmuebles comerciales.",
+    "href": "https://www.brickbro.com",
+    "role": "Frontend Developer",
+    "stack": [
+      "Next.js",
+      "MUI",
+      "TypeScript"
+    ],
+    "year": "2021",
+    "scope": "Team",
+    "isDiscontinued": false
+  },
+  {
+    "slug": "app-bitsacard",
+    "label": "App BitsaCard",
+    "description": "Aplicación web de usuario para la plataforma BitsaCard.",
+    "href": "https://app.bitsacard.com",
+    "role": "Frontend Engineer",
+    "stack": [
+      "Next.js",
+      "Bootstrap",
+      "JavaScript"
+    ],
+    "year": "2020",
+    "scope": "Solo",
+    "isDiscontinued": true
+  },
+  {
+    "slug": "bitsacard",
+    "label": "BitsaCard",
+    "description": "Plataforma de tarjetas de fidelización digital para negocios locales.",
+    "href": "https://bitsacard.com",
+    "role": "Frontend Developer",
+    "stack": [
+      "Next.js",
+      "Bootstrap",
+      "JavaScript"
+    ],
+    "year": "2019",
+    "scope": "Solo",
+    "isDiscontinued": false
   }
 ]
