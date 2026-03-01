@@ -56,7 +56,7 @@
   },
   {
     "slug": "app-bitsacard",
-    "label": "App BitsaCard",
+    "label": "BitsaCard App",
     "description": "User-facing web application for the BitsaCard platform.",
     "href": "https://app.bitsacard.com",
     "role": "Frontend Engineer",

@@ -19,7 +19,7 @@ defineProps<{
     :class="[
       'group flex flex-col gap-3 rounded-xl border p-5 transition-all duration-200',
       isDiscontinued
-        ? 'cursor-not-allowed border-primary/15 bg-primary/[0.05]'
+        ? 'border-primary/15 cursor-not-allowed bg-primary/[0.05]'
         : 'cursor-pointer border-primary/20 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md hover:shadow-primary/10',
     ]"
   >
