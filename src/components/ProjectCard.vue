@@ -19,12 +19,12 @@ defineProps<{
     :class="[
       'group flex flex-col gap-3 rounded-xl border p-5 transition-all duration-200',
       isDiscontinued
-        ? 'cursor-not-allowed border-primary/20 hover:border-primary/20'
+        ? 'cursor-not-allowed border-primary/15 bg-primary/[0.05]'
         : 'cursor-pointer border-primary/20 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md hover:shadow-primary/10',
     ]"
   >
     <div class="flex items-start justify-between gap-3">
-      <h2 :class="['text-base font-semibold text-primary', isDiscontinued && 'line-through decoration-primary/40']">
+      <h2 class="text-base font-semibold text-primary">
         {{ label }}
       </h2>
       <div class="flex shrink-0 items-center gap-2">
