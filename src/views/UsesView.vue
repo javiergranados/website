@@ -24,7 +24,7 @@ const { intro, sections } = usesData
             :href="item.href"
             target="_blank"
             rel="noreferrer"
-            class="group flex flex-col gap-1 rounded-lg border border-primary/10 px-4 py-3 transition-all duration-200 hover:border-primary/30 hover:bg-primary/5"
+            class="group flex flex-col gap-1 rounded-lg border border-primary/30 px-4 py-3 transition-all duration-200 hover:border-primary/60 hover:bg-primary/5"
           >
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">

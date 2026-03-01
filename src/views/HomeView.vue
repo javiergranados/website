@@ -23,8 +23,7 @@ const coverLgSrc = computed(() => `cover-lg-${theme.value}.svg`)
       <div class="flex flex-col items-center gap-6 text-center md:items-start md:text-left">
         <div>
           <p class="mb-2 text-sm font-medium uppercase tracking-widest text-primary/60">Based in Seville, Spain 🇪🇸</p>
-          <h1 class="text-4xl font-bold text-primary md:text-5xl">Javier Granados</h1>
-          <p class="mt-2 text-xl font-medium text-primary/80 md:text-2xl">Front-end Developer & Tech Lead</p>
+          <h1 class="text-3xl font-bold text-primary md:text-4xl">Front-end Developer & Tech Lead</h1>
         </div>
 
         <p class="max-w-md text-base text-primary/70">
