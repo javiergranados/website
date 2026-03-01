@@ -3,12 +3,12 @@ import { useTheme } from '@/composables/useTheme'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const { theme } = useTheme()
+const { colorMode } = useTheme()
 const { t } = useI18n()
 
-const coverSrc = computed(() => `cover-${theme.value}.svg`)
-const coverMdSrc = computed(() => `cover-md-${theme.value}.svg`)
-const coverLgSrc = computed(() => `cover-lg-${theme.value}.svg`)
+const coverSrc = computed(() => `cover-${colorMode.value}.svg`)
+const coverMdSrc = computed(() => `cover-md-${colorMode.value}.svg`)
+const coverLgSrc = computed(() => `cover-lg-${colorMode.value}.svg`)
 </script>
 
 <template>

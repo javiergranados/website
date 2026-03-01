@@ -5,15 +5,17 @@ import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import HamburgerMenu from './HamburgerMenu.vue'
 import LocaleSwitcher from './LocaleSwitcher.vue'
+import ThemeSwitcher from './ThemeSwitcher.vue'
 import ThemeToggle from './ThemeToggle.vue'
 
 const NAV_OPTIONS = ['projects', 'uses', 'about'] as const
 
-const { theme, toggleTheme } = useTheme()
+const { colorMode, toggleColorMode } = useTheme()
 const { t } = useI18n()
 const route = useRoute()
 
-const logoSrc = computed(() => `logo-${theme.value}.svg`)
+// Opción A (6.1): reutilizar logos existentes — el logo dark funciona bien con el fondo oscuro neon
+const logoSrc = computed(() => `logo-${colorMode.value}.svg`)
 
 function isActive(option: string) {
   return route.name === option
@@ -42,8 +44,9 @@ function isActive(option: string) {
         >
       </div>
       <div class="ml-auto flex items-center gap-2">
+        <ThemeSwitcher />
         <LocaleSwitcher />
-        <ThemeToggle :is-dark-mode="theme === 'dark'" @toggle-theme="toggleTheme" />
+        <ThemeToggle :is-dark-mode="colorMode === 'dark'" @toggle-theme="toggleColorMode" />
       </div>
     </div>
   </nav>

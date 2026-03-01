@@ -11,6 +11,71 @@
   }
 }
 
+/* ========================= */
+/*  NEON THEME OVERRIDES     */
+/* ========================= */
+
+.theme-neon {
+  --neon-glow-color: rgba(0, 224, 84, 0.4);
+  --neon-glow-secondary: rgba(0, 201, 255, 0.3);
+  --neon-border-color: rgba(0, 224, 84, 0.3);
+  --neon-gradient: linear-gradient(135deg, #00E054, #00C9FF);
+  --neon-gradient-hover: linear-gradient(135deg, #00C9FF, #00E054);
+}
+
+.theme-neon.light {
+  --neon-glow-color: rgba(5, 144, 51, 0.2);
+  --neon-glow-secondary: rgba(8, 145, 178, 0.15);
+  --neon-border-color: rgba(5, 144, 51, 0.25);
+  --neon-gradient: linear-gradient(135deg, #059033, #0891B2);
+  --neon-gradient-hover: linear-gradient(135deg, #0891B2, #059033);
+}
+
+/* Glow en hover para elementos interactivos */
+.theme-neon a:hover,
+.theme-neon button:hover {
+  text-shadow: 0 0 8px var(--neon-glow-color);
+}
+
+/* Cards con borde y glow */
+.theme-neon .card {
+  border: 1px solid var(--neon-border-color);
+  transition: all 0.3s ease;
+}
+
+.theme-neon .card:hover {
+  border-color: oklch(var(--p));
+  box-shadow:
+    0 0 15px var(--neon-glow-color),
+    0 4px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Navbar border glow */
+.theme-neon nav {
+  border-bottom-color: var(--neon-border-color);
+}
+
+/* Badges con gradiente */
+.theme-neon .badge-primary {
+  background: var(--neon-gradient);
+  color: #0B1622;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+/* Nav link activo con glow */
+.theme-neon .router-link-active.bg-primary {
+  box-shadow: 0 0 12px var(--neon-glow-color);
+}
+
+/* Transición suave al cambiar de tema */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* Page transition */
 .page-enter-active,
 .page-leave-active {
