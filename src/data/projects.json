@@ -5,11 +5,7 @@
     "description": "The operating system for global manufacturing for factories and brands.",
     "href": "https://fabrikware.com/",
     "role": "Frontend Engineer",
-    "stack": [
-      "React",
-      "Tailwind",
-      "TypeScript"
-    ],
+    "stack": ["React", "Tailwind", "TypeScript"],
     "year": "2025",
     "scope": "Team",
     "isDiscontinued": true
@@ -20,11 +16,7 @@
     "description": "Plataforma de referencia de aparcamiento flexible.",
     "href": "https://app.parkiduo.com/",
     "role": "Frontend Engineer",
-    "stack": [
-      "Preact",
-      "daisyUI",
-      "Tailwind"
-    ],
+    "stack": ["Preact", "daisyUI", "Tailwind"],
     "year": "2024",
     "scope": "Team",
     "isDiscontinued": false
@@ -35,11 +27,7 @@
     "description": "App de entrenamiento personal y seguimiento de hábitos saludables.",
     "href": "https://entrenaxsalud.vercel.app/",
     "role": "Frontend Engineer",
-    "stack": [
-      "Next.js",
-      "Bootstrap",
-      "JavaScript"
-    ],
+    "stack": ["Next.js", "Bootstrap", "JavaScript"],
     "year": "2022",
     "scope": "Solo",
     "isDiscontinued": false
@@ -50,11 +38,7 @@
     "description": "Plataforma de criptomonedas y activos digitales.",
     "href": "https://wallacoin.com",
     "role": "Frontend Engineer",
-    "stack": [
-      "React",
-      "Emotion",
-      "TypeScript"
-    ],
+    "stack": ["React", "Emotion", "TypeScript"],
     "year": "2022",
     "scope": "Team",
     "isDiscontinued": true
@@ -65,11 +49,7 @@
     "description": "Plataforma inmobiliaria proptech para la compraventa de inmuebles comerciales.",
     "href": "https://www.brickbro.com",
     "role": "Frontend Developer",
-    "stack": [
-      "Next.js",
-      "MUI",
-      "TypeScript"
-    ],
+    "stack": ["Next.js", "MUI", "TypeScript"],
     "year": "2021",
     "scope": "Team",
     "isDiscontinued": false
@@ -80,11 +60,7 @@
     "description": "Aplicación web de usuario para la plataforma BitsaCard.",
     "href": "https://app.bitsacard.com",
     "role": "Frontend Engineer",
-    "stack": [
-      "Next.js",
-      "Bootstrap",
-      "JavaScript"
-    ],
+    "stack": ["Next.js", "Bootstrap", "JavaScript"],
     "year": "2020",
     "scope": "Solo",
     "isDiscontinued": true
@@ -95,11 +71,7 @@
     "description": "Plataforma de tarjetas de fidelización digital para negocios locales.",
     "href": "https://bitsacard.com",
     "role": "Frontend Developer",
-    "stack": [
-      "Next.js",
-      "Bootstrap",
-      "JavaScript"
-    ],
+    "stack": ["Next.js", "Bootstrap", "JavaScript"],
     "year": "2019",
     "scope": "Solo",
     "isDiscontinued": false
