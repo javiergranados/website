@@ -1,0 +1,46 @@
+{
+  "headline": "Frontend Engineer & Tech Lead",
+  "location": "Seville, Spain",
+  "bio": "I'm a tech lead at a telecommunications company where I lead frontend development, focused on creating experiences that are functional, visually polished, and scalable. I'm passionate about the process of transforming problems into well-structured solutions — from code architecture to visual details.",
+  "bio2": "While frontend is my core expertise, I actively engage in design and project management. I believe the best products emerge when there's coherence between technical vision, user experience, and team structure. I value documentation and clarity because they enable scalability and allow work to have lasting impact.",
+  "interests": [
+    {
+      "emoji": "💍",
+      "label": "Husband"
+    },
+    {
+      "emoji": "👨‍👧‍👦",
+      "label": "Father of 3"
+    },
+    {
+      "emoji": "🧗",
+      "label": "Casual rock climber"
+    },
+    {
+      "emoji": "🎵",
+      "label": "OST lover"
+    },
+    {
+      "emoji": "🎮",
+      "label": "Videogames fan"
+    },
+    {
+      "emoji": "📚",
+      "label": "Fantasy books enthusiast"
+    }
+  ],
+  "social": [
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/javiergranadosdev/"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/javiergranados"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:hola@javiergranados.dev"
+    }
+  ]
+}

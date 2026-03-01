@@ -9,10 +9,20 @@
   .nav-option-selected {
     @apply cursor-default bg-secondary dark:bg-primary dark:text-base-100;
   }
-  .nav-option-odd {
-    @apply rounded-bl-[200px] rounded-br-[100px] rounded-tl-[300px] rounded-tr-[300px];
-  }
-  .nav-option-even {
-    @apply rounded-bl-[100px] rounded-br-[200px] rounded-tl-[300px] rounded-tr-[300px];
-  }
+}
+
+/* Page transition */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-4px);
 }

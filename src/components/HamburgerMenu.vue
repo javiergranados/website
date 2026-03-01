@@ -27,13 +27,13 @@ const router = useRouter()
   <Menu v-slot="{ open }" as="div" class="relative inline-block text-left">
     <MenuButton class="relative ml-2 md:hidden">
       <div
-        class="relative flex h-[50px] w-[50px] transform flex-col items-center justify-center overflow-hidden rounded-full border border-primary"
+        class="relative flex h-[34px] w-[34px] transform flex-col items-center justify-center overflow-hidden rounded-full border border-primary"
       >
         <div
-          :class="[open ? 'translate-y-3' : '', '-translate-y-5 transform overflow-hidden transition-all duration-300']"
+          :class="[open ? 'translate-y-2' : '', '-translate-y-4 transform overflow-hidden transition-all duration-300']"
         >
           <svg
-            class="w-6h-6 h-6 w-6 animate-bounce text-primary"
+            class="h-4 w-4 animate-bounce text-primary"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -43,39 +43,37 @@ const router = useRouter()
           </svg>
         </div>
         <div
-          class="flex h-[20px] w-[20px] origin-center -translate-y-3 transform flex-col justify-between overflow-hidden transition-all duration-300"
+          class="flex h-[14px] w-[14px] origin-center -translate-y-2 transform flex-col justify-between overflow-hidden transition-all duration-300"
         >
           <div
             :class="[
-              open ? 'translate-y-6' : '',
-              'mb-1.5 h-[2px] w-7 origin-left transform bg-primary transition-all duration-300',
+              open ? 'translate-y-4' : '',
+              'mb-1 h-[2px] w-5 origin-left transform bg-primary transition-all duration-300',
             ]"
           ></div>
           <div1
             :class="[
-              open ? 'translate-y-6' : '',
-              'mb-1.5 h-[2px] w-7 transform rounded bg-primary transition-all delay-75 duration-300',
+              open ? 'translate-y-4' : '',
+              'mb-1 h-[2px] w-5 transform rounded bg-primary transition-all delay-75 duration-300',
             ]"
           ></div1>
           <div
             :class="[
-              open ? 'translate-y-6' : '',
-              'h-[2px] w-7 origin-left transform bg-primary transition-all delay-100 duration-300',
+              open ? 'translate-y-4' : '',
+              'h-[2px] w-5 origin-left transform bg-primary transition-all delay-100 duration-300',
             ]"
           ></div>
         </div>
       </div>
     </MenuButton>
     <MenuItems
-      class="ring-primary-700 absolute left-0 z-10 mt-2 w-56 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-white ring-opacity-5 focus:outline-none"
+      class="ring-primary-700 absolute left-0 z-10 mt-2 w-56 origin-top-left rounded-md border border-primary/20 bg-base-100 shadow-lg ring-1 ring-primary/20 focus:outline-none"
     >
       <div class="px-1 py-1">
         <MenuItem v-for="menuOption in MENU_OPTIONS" v-slot="{ active }" :key="menuOption.label">
           <button
             :class="[
-              active
-                ? 'bg-primary text-secondary dark:bg-base-100 dark:text-primary'
-                : 'text-primary dark:text-base-100',
+              active ? 'bg-primary text-base-100 dark:bg-primary dark:text-base-100' : 'text-primary dark:text-primary',
               'flex w-full items-center rounded-md px-2 py-2 text-sm font-semibold',
             ]"
             @click="router.push(menuOption.route)"

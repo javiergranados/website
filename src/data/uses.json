@@ -1,0 +1,83 @@
+{
+  "intro": "Software and hardware I use daily for work and personal projects.",
+  "sections": [
+    {
+      "title": "Desktop Apps",
+      "icon": "💻",
+      "items": [
+        {
+          "title": "Editor",
+          "text": "Windsurf",
+          "href": "https://windsurf.com/",
+          "note": "Where developers are doing their best work."
+        },
+        {
+          "title": "Terminal",
+          "text": "Ghostty",
+          "href": "https://ghostty.org/",
+          "note": "Fast, feature-rich, and cross-platform terminal emulator."
+        },
+        {
+          "title": "To-Do List",
+          "text": "Things",
+          "href": "https://culturedcode.com/things/",
+          "note": "Task manager that helps you plan your day, manage your projects, and make real progress toward your goals."
+        },
+        {
+          "title": "Settings",
+          "text": "Dot Files repo",
+          "href": "https://github.com/javiergranados/dotfiles",
+          "note": "All my configuration versioned on GitHub (WIP)."
+        }
+      ]
+    },
+    {
+      "title": "Desk Setup",
+      "icon": "🖥️",
+      "items": [
+        {
+          "title": "Computer",
+          "text": "Mac mini",
+          "href": "https://support.apple.com/es-es/111894",
+          "note": "M1, 16GB RAM."
+        },
+        {
+          "title": "Monitor",
+          "text": "MPG321CURX QD-Oled",
+          "href": "https://es.msi.com/Monitor/MPG-321CURX-QD-OLED",
+          "note": null
+        },
+        {
+          "title": "Keyboard",
+          "text": "Feker Alice 80",
+          "href": "https://amzn.eu/d/j6YUaUg",
+          "note": "Ergonomic layout, yellow switches."
+        },
+        {
+          "title": "Mouse",
+          "text": "Magic Trackpad",
+          "href": "https://www.apple.com/es/shop/product/mxka3z/a/magic-trackpad-usb%E2%80%91c-superficie-multi%E2%80%91touch-negra",
+          "note": null
+        },
+        {
+          "title": "Standing Desk",
+          "text": "FlexiSpot E7",
+          "href": "https://www.flexispot.es/escritorio-regulable-electricamente-e7.html",
+          "note": null
+        },
+        {
+          "title": "Table top",
+          "text": "ANFALLARE",
+          "href": "https://www.ikea.com/es/en/p/anfallare-table-top-bamboo-00465141/",
+          "note": "Bamboo, 140x65 cm."
+        },
+        {
+          "title": "Chair",
+          "text": "VALK Freya",
+          "href": "https://valkgaming.com/en/36-valk-freya-gaming-chair.html",
+          "note": "Atomic Grey."
+        }
+      ]
+    }
+  ]
+}

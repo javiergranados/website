@@ -1,110 +1,46 @@
 <script setup lang="ts">
-type IterableElement = ReadonlyArray<{
-  title: string
-  text: string
-  href: string
-}>
+import usesData from '@/data/uses.json'
 
-const apps: IterableElement = [
-  {
-    title: 'Editor',
-    text: 'Visual Studio Code',
-    href: 'https://code.visualstudio.com',
-  },
-  {
-    title: 'Terminal',
-    text: 'Warp',
-    href: 'https://app.warp.dev/referral/96XYLV',
-  },
-  {
-    title: 'To-Do List',
-    text: 'Things',
-    href: 'https://culturedcode.com/things/',
-  },
-  {
-    title: 'Settings',
-    text: 'Dot Files repo',
-    href: 'https://github.com/javiergranados/dotfiles',
-  },
-]
-
-const devices: IterableElement = [
-  {
-    title: 'Laptop',
-    text: 'MacBook Pro 16"',
-    href: 'https://amzn.eu/d/7ijc1tJ',
-  },
-  {
-    title: 'Main Monitor',
-    text: 'Huawei Mateview',
-    href: 'https://amzn.eu/d/6YRjSjR',
-  },
-  {
-    title: 'Secondary Monitor',
-    text: 'Dell P2421DC',
-    href: 'https://amzn.eu/d/8l51wYx',
-  },
-  {
-    title: 'Keyboard',
-    text: 'Feker Alice 80',
-    href: 'https://amzn.eu/d/j6YUaUg',
-  },
-  {
-    title: 'Mouse',
-    text: 'Logitech MX Ergo',
-    href: 'https://amzn.eu/d/gvBSjKY',
-  },
-  {
-    title: 'Standing Desk',
-    text: 'FlexiSpot E7',
-    href: 'https://www.flexispot.es/escritorio-regulable-electricamente-e7.html',
-  },
-  {
-    title: 'Tabletop',
-    text: 'Ikea Bekant',
-    href: 'https://www.ikea.com/es/es/p/bekant-tablero-linoleo-azul-10366305/#content',
-  },
-  {
-    title: 'Chair',
-    text: 'Ikea Markus',
-    href: 'https://www.ikea.com/es/es/p/markus-silla-trabajo-vissle-gris-claro-10521858',
-  },
-]
+const { intro, sections } = usesData
 </script>
 
 <template>
-  <h1 class="mb-4 text-4xl font-semibold text-primary md:mb-6">Desktop Apps</h1>
-  <ul class="text-3xl text-primary">
-    <li v-for="app in apps" :key="app.title" class="mb-2">
-      <a
-        :href="app.href"
-        target="_blank"
-        rel="noreferrer"
-        class="text-2xl text-primary no-underline transition-colors hover:text-neutral"
-      >
-        <span class="mr-3 hidden md:inline">▷</span>
-        <span class="font-semibold">{{ app.title }} - </span>
-        <span>{{ app.text }}</span>
-      </a>
-    </li>
+  <div class="mx-auto w-full max-w-7xl px-4 py-12 md:px-8">
+    <div class="mb-10">
+      <h1 class="text-3xl font-bold text-primary md:text-4xl">Uses</h1>
+      <p class="mt-3 text-primary/70">{{ intro }}</p>
+    </div>
 
-    <li class="mb-2"></li>
-  </ul>
-  <h1 class="mb-4 mt-10 text-4xl font-semibold text-primary md:mb-6">Desk Setup</h1>
-  <ul class="text-3xl text-primary">
-    <li v-for="device in devices" :key="device.title" class="mb-2">
-      <a
-        :href="device.href"
-        target="_blank"
-        rel="noreferrer"
-        class="text-2xl text-primary no-underline transition-colors hover:text-neutral"
-      >
-        <span class="mr-3 hidden md:inline">▷</span>
-        <span class="font-semibold">{{ device.title }} - </span>
-        <span>{{ device.text }}</span>
-      </a>
-    </li>
-
-    <li class="mb-2"></li>
-  </ul>
+    <div class="flex flex-col gap-12">
+      <section v-for="section in sections" :key="section.title">
+        <h2 class="mb-5 flex items-center gap-2 text-xl font-semibold text-primary">
+          <span>{{ section.icon }}</span>
+          <span>{{ section.title }}</span>
+        </h2>
+        <div class="flex flex-col gap-2">
+          <a
+            v-for="item in section.items"
+            :key="item.title"
+            :href="item.href"
+            target="_blank"
+            rel="noreferrer"
+            class="group flex flex-col gap-1 rounded-lg border border-primary/30 px-4 py-3 transition-all duration-200 hover:border-primary/60 hover:bg-primary/5"
+          >
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="text-sm font-semibold text-primary">{{ item.title }}</span>
+                <span class="text-primary/30">·</span>
+                <span class="text-sm text-primary/70">{{ item.text }}</span>
+              </div>
+              <span
+                class="text-xs text-primary/30 transition-all group-hover:translate-x-0.5 group-hover:text-primary/60"
+                >→</span
+              >
+            </div>
+            <p v-if="item.note" class="text-xs text-primary/50">{{ item.note }}</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
 </template>
