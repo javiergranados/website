@@ -3,12 +3,13 @@ import { useTheme } from '@/composables/useTheme'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const { theme } = useTheme()
+const { daisyuiTheme } = useTheme()
 const { t } = useI18n()
 
-const coverSrc = computed(() => `cover-${theme.value}.svg`)
-const coverMdSrc = computed(() => `cover-md-${theme.value}.svg`)
-const coverLgSrc = computed(() => `cover-lg-${theme.value}.svg`)
+// Opción B (6.2): variantes de cover para cada tema — *-light, *-dark, *-neon-light, *-neon-dark
+const coverSrc = computed(() => `cover-${daisyuiTheme.value}.svg`)
+const coverMdSrc = computed(() => `cover-md-${daisyuiTheme.value}.svg`)
+const coverLgSrc = computed(() => `cover-lg-${daisyuiTheme.value}.svg`)
 </script>
 
 <template>

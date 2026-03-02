@@ -28,5 +28,11 @@
   "locale": {
     "en": "English",
     "es": "Spanish"
+  },
+  "theme": {
+    "switchToNeon": "Switch to Neon theme",
+    "switchToDefault": "Switch to Default theme",
+    "neon": "Neon",
+    "default": "Default"
   }
 }
