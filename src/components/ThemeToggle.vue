@@ -25,13 +25,13 @@ const isToggleEnabled = computed({
     v-model="isToggleEnabled"
     :class="
       isToggleEnabled
-        ? 'border-gray-500 bg-gray-800 hover:border-gray-400'
-        : 'border-gray-400 bg-base-200 hover:border-gray-500'
+        ? 'border-primary/60 bg-base-300 hover:border-primary/80'
+        : 'border-primary/30 bg-base-200 hover:border-primary/50'
     "
     class="relative inline-flex h-6 w-11 items-center rounded-full border"
   >
     <span
-      :class="isToggleEnabled ? 'translate-x-6 bg-base-100' : 'translate-x-1 bg-gray-200'"
+      :class="isToggleEnabled ? 'translate-x-6 bg-primary' : 'translate-x-1 bg-primary/40'"
       class="b-1 inline-block h-4 w-4 transform rounded-full transition"
     />
     <!-- sun -->
