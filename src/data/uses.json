@@ -17,11 +17,11 @@
             "en": "IDE",
             "es": "Editor"
           },
-          "text": "Windsurf",
-          "href": "https://windsurf.com/",
+          "text": "Visual Studio Code",
+          "href": "https://code.visualstudio.com/",
           "note": {
-            "en": "Where developers are doing their best work.",
-            "es": "Donde los desarrolladores hacen su mejor trabajo."
+            "en": "The open source AI code editor.",
+            "es": "El editor de código de IA de código abierto."
           }
         },
         {
@@ -30,11 +30,11 @@
             "en": "Terminal",
             "es": "Consola"
           },
-          "text": "Ghostty",
-          "href": "https://ghostty.org/",
+          "text": "Warp terminal",
+          "href": "https://www.warp.dev/terminal",
           "note": {
-            "en": "Fast, feature-rich, and cross-platform terminal emulator.",
-            "es": "Emulador de terminal rápido, rico en características y multiplataforma."
+            "en": "The best place to build with agents.",
+            "es": "El mejor lugar para construir con agentes."
           }
         },
         {
@@ -114,8 +114,8 @@
             "en": "Mouse",
             "es": "Ratón"
           },
-          "text": "Magic Trackpad",
-          "href": "https://www.apple.com/es/shop/product/mxka3z/a/magic-trackpad-usb%E2%80%91c-superficie-multi%E2%80%91touch-negra",
+          "text": "MX Ergo S",
+          "href": "https://www.logitech.com/es-es/shop/p/mx-ergo-s-wireless-trackball-mouse.910-007260",
           "note": null
         },
         {
